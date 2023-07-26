@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer 
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Fikri Habib R",
+    "email": "fikribce07@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "fikribce07@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
